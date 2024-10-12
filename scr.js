@@ -74,8 +74,8 @@ function updatetimett(){
 
 
 function iniciarsong(){
-    capadisc.src = `img/${playlist[index].filex}.jpg`;
-    song.src = `img/${playlist[index].filex}.mp3`;
+    capadisc.src = `${playlist[index].filex}.jpg`;
+    song.src = `${playlist[index].filex}.mp3`;
     songname.innerText = playlist[index].songnamex;
     artist.innerText = playlist[index].artistx;
 
