@@ -1,0 +1,135 @@
+.div-player {
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Itens dispostos verticalmente */
+    align-items: center;
+    border-radius: 3px;
+    
+}
+/* -----------------------
+            CSS do Player
+   ------------------------------ */
+
+   #titulop {
+    display: flex;
+    flex-direction: column; /* Títulos dispostos verticalmente */
+    align-items: center;
+    color: rgb(202, 75, 103);
+    margin-bottom: 2em;
+}
+#imgp {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+#capa {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    font-size: 2em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+#barc {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#bar {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+#barp {
+    --progress: 0%;
+    background-color: rgb(105, 16, 71);
+    height: inherit;
+    width: var(--progress);
+    cursor: pointer;
+}
+
+#time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: monospace;
+}
+
+#art {
+    margin-top: 1em;
+    text-align: center;
+}
+
+#song {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#artist {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* fim player
+------------------------*/
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateTxt 25s linear infinite;
+}
+
+.text span {
+    position: absolute;
+    left: 49%;
+    top: -20%;
+    font-size: 1em;
+    transform-origin: 0 200px;
+}
+
+@keyframes rotateTxt {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #111222;
+    margin-top: 10px;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .logo-title{
+    position: absolute;
+    background-size: cover;
+    left: 0px;
+    top:0px;
+}
+.container .logo-title img {
+    width: 150px;
+    height: 150px;
+}
+.main-title{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.content{
+
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0rem;
+    left: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 10px;
+}
+
+.content .text-box{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons{
+    margin-top: 100px;
+}
+
+.media-icons a{
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+}
+.section-title{
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+.media-info{
+    width: 100px;
+    margin-left: 50px;
+}
+.media-info li{
+    list-style: none;
+    font-size: 1.4em;
+
+}
+.media-info li a{
+color: #fff;
+text-decoration: none;
+}
+
+.media-info li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1), .media-info li:nth-child(5){
+    padding-left: 100px;
+}
+.media-info li:nth-child(2), .media-info li:nth-child(4){
+padding-left: 50px;
+}
+
+.sec-03{
+    margin-bottom: 100px;
+}
+
+
+/* -----------------------
+            CSS do Player
+   ------------------------------ */
+
+
+   .div-player {
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Itens dispostos verticalmente */
+    align-items: center;
+    border-radius: 3px;
+    
+}
+
+   #titulop {
+    display: flex;
+    flex-direction: column; /* Títulos dispostos verticalmente */
+    align-items: center;
+    color: rgb(202, 75, 103);
+    margin-bottom: 2em;
+}
+#imgp {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+#capa {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    font-size: 2em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+#barc {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#bar {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+#barp {
+    --progress: 0%;
+    background-color: rgb(105, 16, 71);
+    height: inherit;
+    width: var(--progress);
+    cursor: pointer;
+}
+
+#time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: monospace;
+}
+
+#art {
+    margin-top: 1em;
+    text-align: center;
+}
+
+#song {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#artist {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* fim player
+------------------------*/
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateTxt 25s linear infinite;
+}
+
+.text span {
+    position: absolute;
+    left: 49%;
+    top: -20%;
+    font-size: 1em;
+    transform-origin: 0 200px;
+}
+
+@keyframes rotateTxt {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* GALERIA */
+.div-fotos {
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+:root {
+    --transition: cubic-bezier(0.1, 0.7, 0, 1);
+  }
+
+.warp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parente-img {
+    display: flex;
+    gap: 0.4rem;
+    perspective: 60rem;
+}
+
+.img {
+    width: 5.4rem;
+    height: 21rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 
+      transform 1.25s var(--transition), 
+      filter 3s var(--transition),
+      width 0.3s var(--transition);
+    position: relative;
+    filter: grayscale(1) brightness(0.5);
+    will-change: transform, filter;
+    filter: grayscale(100%) brightness(0.5);
+}
+
+.img:hover {
+    transform: translateZ(17.375rem);
+    filter: inherit;
+}
+.img:hover + * {
+    transform: translateZ(14.77rem) rotateY(35deg);
+    filter: grayscale(0.2) brightness(0.9);
+    z-index: -1;
+  }
+  
+  .img:hover + * + * {
+    transform: translateZ(9.73rem) rotateY(40deg);
+    filter: grayscale(0.4) brightness(0.8);
+    z-index: -2;
+  }
+  
+  .img:hover + * + * + * {
+    transform: translateZ(4.17rem) rotateY(35deg);
+    filter: grayscale(0.6) brightness(0.7);
+    z-index: -3;
+  }
+  
+  .img:hover + * + * + * + * {
+    transform: translateZ(1.1rem) rotateY(25deg);
+    filter: grayscale(0.8) brightness(0.6);
+    z-index: -4;
+  }
+  
+  /* When Hovered LEFT */
+  .img:has(+ :hover) {
+    transform: translateZ(14.77rem) rotateY(-35deg);
+    filter: grayscale(0.2) brightness(0.9);
+  }
+  
+  .img:has(+ * + :hover) {
+    transform: translateZ(9.73rem) rotateY(-40deg);
+    filter: grayscale(0.4) brightness(0.8);
+  }
+  
+  .img:has(+ * + * + :hover) {
+    transform: translateZ(4.17rem) rotateY(-35deg);
+    filter: grayscale(0.6) brightness(0.7);
+  }
+  
+  .img:has(+ * + * + * + :hover) {
+    transform: translateZ(1.1rem) rotateY(-25deg);
+    filter: grayscale(0.8) brightness(0.6);
+  }
+  .img:hover {
+    transform: translateZ(17.375rem);
+    filter: inherit;
+  }
+  
+  /* Sidebar Helpers */
+  .img::before,
+  .img::after {
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 100%;
+    right: -1.25rem;
+  }
+  
+  .img::after {
+    left: -1.25rem;
+  }
+
+  .aberto {
+    width: 25vw;
+    transform: translateZ(17.375rem);
+    filter: inherit;
+    z-index: 1;
+    margin: 0 0.45vw;
+  } 
+
+  /*------------------------ PLAYER DO VIDEO ------------*/
+  .content .text-box-2{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-30px, 0px);
+}
+.content .text-box-2 h3{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+  .video-play {
+    width: 100%;
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-video {
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* rodapé */
+.footer-content{
+    font-size: 1.0rem;
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-style: none;
+}
+
+.footer-content a{
+    height: 100px;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    font-style: none;
+}
+.footer-content a:hover{
+    color: antiquewhite;
+}
+
+
+
+.particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/*  div sec 5 */
+
+.import {
+    width: 800px;
+    height: 500px;
+    background: #292A39;
+    box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.158);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+  
+  .import p {
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+  
+  .import img {
+    width: 100%; /* Ajuste a largura do GIF */
+    height: auto; /* Mantém a proporção do GIF */
+  }
+
+  .import-gif{
+    width: 80%;
+
+  }
+  
+  .wrapper-section-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+  }
+  
+  .flying-area {
+    position: relative;
+    width: 500px; /* Largura da área de voo */
+    height: 800px; /* Altura aumentada para permitir que a cabeça suba mais */
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: absolute;
+    width: 300px;
+    height: 500px; /* Altura do corpo */
+    bottom: 0; /* Alinha o container do corpo ao fundo da área de voo */
+  }
+  
+  .image-container img {
+    position: absolute;
+    width: 400px; /* Largura do corpo */
+    height: auto; /* Mantém a proporção do corpo */
+    bottom: 0; /* Alinha o corpo ao fundo do container */
+    object-fit: contain;
+  }
+  
+  .head {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background-size: contain; /* Altera para cover para cobrir o espaço */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 7s ease-in-out;
+    z-index: 10; /* Adiciona uma borda temporária para debug */
+  }
+  
+  /* Posição da cabeça 1 */
+  .head1 {
+    left: 125px; /* Ajuste para alinhar com o corpo */
+    top: -5px; /* Alinha melhor a cabeça com o topo do corpo */
+  }
+  
+  /* Posição da cabeça 2 */
+  .head2 {
+    left: 80px; /* Ajuste para alinhar com o corpo */
+    top: -20px; /* Alinha melhor a cabeça com o topo do corpo */
+  }
+  
+  .image-container:hover .head1 {
+    transform: translateY(-300px) rotate(-90deg); /* A cabeça sobe e gira ao passar o mouse */
+  }
+  .image-container:hover .head2 {
+    transform: translateY(-300px) rotate(90deg); /* A cabeça sobe e gira ao passar o mouse */
+  }
